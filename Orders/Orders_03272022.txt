@@ -1,0 +1,2 @@
+OrderNumber::CustomerName::State::TaxRate::ProductType::Area::CostPerSquareFoot::LaborCostPerSquareFoot::MaterialCost::LaborCost::Tax::Total
+7::Jane Doe::WA::9.250::Laminate::15030.00::1.750::2.100::26302.50::31563.00::5352.56::63218.06

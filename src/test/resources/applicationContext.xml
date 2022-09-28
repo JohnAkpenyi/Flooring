@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/mvc
+          http://www.springframework.org/schema/mvc/spring-mvc.xsd
+          http://www.springframework.org/schema/tx
+          http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+          http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/aop  
+          http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+    <!-- Bean definitions go here -->
+   <bean id = "daoStub" class = "com.fm.service.FlooringDaoStubImpl"/>
+   
+   <bean id = "auditDaoStub" class = "com.fm.service.FlooringAuditDaoStubImpl"/>
+   
+   <bean id = "service" class = "com.fm.service.FlooringServiceLayerImpl">
+       <constructor-arg ref = "daoStub"/>
+       <constructor-arg ref = "auditDaoStub"/>
+   </bean>
+   
+   <bean id = "testDao" class = "com.fm.dao.FlooringDaoFileImpl">
+        <constructor-arg value = "TestOrders"/>
+        <constructor-arg value = "TestOrders_"/>
+        <constructor-arg value = "TestDataExport.txt"/>
+        <constructor-arg value = "TestProducts.txt"/>
+        <constructor-arg value = "TestTaxes.txt"/>
+   </bean>
+</beans>

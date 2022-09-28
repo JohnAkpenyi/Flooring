@@ -1,0 +1,2 @@
+OrderNumber::CustomerName::State::TaxRate::ProductType::Area::CostPerSquareFoot::LaborCostPerSquareFoot::MaterialCost::LaborCost::Tax::Total
+8::Test Order::WA::9.250::Carpet::500.00::2.250::2.100::1125.00::1050.00::201.19::2376.19

@@ -1,0 +1,2 @@
+OrderNumber::CustomerName::State::TaxRate::ProductType::Area::CostPerSquareFoot::LaborCostPerSquareFoot::MaterialCost::LaborCost::Tax::Total
+6::John Doe::KY::6.000::Carpet::545.50::2.250::2.100::1227.38::1145.55::142.38::2515.30
